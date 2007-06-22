@@ -18,6 +18,7 @@ Source:		ftp://ftp.perl.org/pub/CPAN/modules/by-module/%{modprefix}/%{module}-%{
 %if %{mdkversion} < 1010
 BuildRequires:	perl-devel >= 5.8.1
 %endif
+BuildRequires:	perl(Log::Message)
 BuildArch:	noarch
 Buildroot:	%{_tmppath}/%{name}-root
 
