@@ -1,6 +1,6 @@
 %define	module	Log-Message-Simple
 %define name	perl-%{module}
-%define	modprefix Log/Message
+%define	modprefix Log
 
 %define version 0.02
 
