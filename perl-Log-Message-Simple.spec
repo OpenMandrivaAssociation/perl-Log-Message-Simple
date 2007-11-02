@@ -2,7 +2,7 @@
 %define name	perl-%{module}
 %define	modprefix Log
 
-%define version 0.02
+%define version 0.04
 
 %define	rel	1
 %define release %mkrel %{rel}
