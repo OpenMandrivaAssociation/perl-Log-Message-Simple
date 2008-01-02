@@ -20,6 +20,7 @@ BuildRequires:	perl-devel >= 5.8.1
 %endif
 BuildRequires:	perl(Log::Message)
 BuildArch:	noarch
+Buildroot:	%{_tmppath}/%{name}-root
 
 
 %description
