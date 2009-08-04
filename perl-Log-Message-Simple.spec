@@ -1,33 +1,28 @@
-%define	module	Log-Message-Simple
-%define name	perl-%{module}
-%define	modprefix Log
+%define	upstream_name	 Log-Message-Simple
+%define upstream_version 0.04
 
-%define version 0.04
-
-%define	rel	1
-%define release %mkrel %{rel}
+Name:       perl-%{upstream_name}
+Version:    %perl_convert_version %{upstream_version}
+Release:    %mkrel 1
 
 Summary:	Standardized logging facilities using the "Log::Message" module
-Name:		%{name}
-Version:	%{version}
-Release:	%{release}
 License:	Artistic/GPL
 Group:		Development/Perl
-URL:		http://search.cpan.org/dist/%{module}/
-Source:		ftp://ftp.perl.org/pub/CPAN/modules/by-module/%{modprefix}/%{module}-%{version}.tar.gz
+Url:		http://search.cpan.org/dist/%{upstream_name}/
+Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/Log/%{upstream_name}-%{upstream_version}.tar.gz
+
 %if %{mdkversion} < 1010
 BuildRequires:	perl-devel >= 5.8.1
 %endif
 BuildRequires:	perl(Log::Message)
 BuildArch:	noarch
-Buildroot:	%{_tmppath}/%{name}-root
-
+Buildroot:	%{_tmppath}/%{name}-%{version}-%{release}
 
 %description
 Provides standardized logging facilities using the "Log::Message" module.
 
 %prep
-%setup -q -n %{module}-%{version}
+%setup -q -n %{upstream_name}-%{upstream_version}
 
 %build
 %__perl Makefile.PL INSTALLDIRS=vendor
@@ -46,5 +41,5 @@ rm -rf %{buildroot}
 %files
 %defattr(-,root,root)
 %doc README
-%{perl_vendorlib}/%{modprefix}/*
+%{perl_vendorlib}/Log/*
 %{_mandir}/*/*
