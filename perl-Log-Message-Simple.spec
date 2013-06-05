@@ -2,14 +2,14 @@
 %define upstream_version 0.08
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	2
+Version:	%perl_convert_version 0.10
+Release:	1
 
 Summary:	Standardized logging facilities using the "Log::Message" module
 License:	Artistic/GPL
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{upstream_name}/
-Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/Log/%{upstream_name}-%{upstream_version}.tar.gz
+Source0:	ftp://ftp.perl.org:21/pub/CPAN/modules/by-module/Log/Log-Message-Simple-0.10.tar.gz
 
 BuildRequires:	perl-devel
 BuildRequires:	perl(Log::Message)
@@ -74,3 +74,4 @@ make test
 
 * Thu Jun 21 2007 Buchan Milne <bgmilne@mandriva.org> 0.02-1mdv2007.1
 - initial package
+
