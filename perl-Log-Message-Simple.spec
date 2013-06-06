@@ -1,6 +1,5 @@
 %define	upstream_name	 Log-Message-Simple
-%define upstream_version 0.08
-
+%define upstream_version 0.10
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version 0.10
 Release:	1
