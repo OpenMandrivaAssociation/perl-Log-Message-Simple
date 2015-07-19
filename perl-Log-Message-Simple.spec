@@ -2,7 +2,7 @@
 %define upstream_version 0.10
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version 0.10
-Release:	5
+Release:	6
 
 Summary:	Standardized logging facilities using the "Log::Message" module
 License:	Artistic/GPL
