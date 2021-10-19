@@ -18,19 +18,19 @@ BuildArch:	noarch
 Provides standardized logging facilities using the "Log::Message" module.
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%autosetup -p1 -n %{upstream_name}-%{upstream_version}
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor
-%make
+%make_build
 
 %check
 make test
 
 %install
-%makeinstall_std
+%make_install
 
 %files
 %doc README
 %{perl_vendorlib}/Log/*
-%{_mandir}/*/*
+%doc %{_mandir}/*/*
