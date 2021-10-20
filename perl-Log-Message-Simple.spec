@@ -12,6 +12,7 @@ Source0:	ftp://ftp.perl.org:21/pub/CPAN/modules/by-module/Log/Log-Message-Simple
 
 BuildRequires:	perl-devel
 BuildRequires:	perl(Log::Message)
+BuildRequires:	perl(Test::More)
 BuildArch:	noarch
 
 %description
