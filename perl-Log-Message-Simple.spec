@@ -7,7 +7,7 @@ Release:	8
 Summary:	Standardized logging facilities using the "Log::Message" module
 License:	Artistic/GPL
 Group:		Development/Perl
-Url:		http://search.cpan.org/dist/%{upstream_name}/
+Url:		https://search.cpan.org/dist/%{upstream_name}/
 Source0:	ftp://ftp.perl.org:21/pub/CPAN/modules/by-module/Log/Log-Message-Simple-0.10.tar.gz
 
 BuildRequires:	perl-devel
